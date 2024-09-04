@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    border: 0;
+    transition: all .3s;
+    font-size: 120%;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 250px;
+    height: 400px;
+    background-color: #008080;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.calculator-container .display {
+    height: 80px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls .numbers {
+    width: 75%;
+}
+
+.controls .numbers .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.controls .numbers .row:last-child {
+    justify-content: center;
+}
+
+/* .controls .operations {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+} */
+
+.controls .operations {
+    margin-top: 2px;
+    width: 23%;
+}
+
+.controls .operations .btn {
+    margin-bottom: 10px;
+}
